@@ -1,0 +1,35 @@
+import random
+ls = ["+", "-", "*", "/"]
+logic = True
+while logic:
+    
+    x = random.randint(0, 30)
+    y = random.randint(1,  30)
+    op = random.randint(0, 3)
+    
+    print("Numbers are", x , y, ", respectively. Write ", x, ls[op], y )
+    
+    provided = round(float(input()) , 3)
+    
+    
+    res = 0
+    
+    if op == 0:
+        res = (x + y)
+    elif op == 1:
+        res = x- y
+    elif op == 2:
+        res = x*y
+    else:
+        res = round(x/y, 3)
+    
+    if provided != res:
+        print("You are wrong, bruda!!! , Terminating. Cya. <3")
+        print("Answer is : ", res)
+        logic = False
+    else:
+        print("Absolutely correct, keep it up. Next...")
+        logic = True
+    
+    
+    
