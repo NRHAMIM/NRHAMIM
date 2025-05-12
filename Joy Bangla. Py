@@ -1,0 +1,19 @@
+import turtle as t 
+t.bgcolor("green")
+t.color("#bf0404")
+t.fillcolor("red")
+t.penup()
+t.right(90)
+t.left(90)
+t.pendown()
+t.forward(20)
+t.begin_fill()
+t.circle(200)
+t.end_fill()
+t.speed(1)
+for i in range(30):
+    for k in range(0):
+        t.forward(1)
+        t.left(10)
+t.title("JOY BANGLA")
+t.done()     
